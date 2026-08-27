@@ -3,7 +3,7 @@ notion-id: 3b48cdcb-81ea-8086-b12e-e319cf356123
 tags:
   - 工具链
   - AI
-  - Claude Code
+  - Claude_code
 ---
 
 # 软件使用指南
@@ -13,7 +13,8 @@ tags:
 > **📑 本文件跳转目录**
 > - **Claude Code**：[[AI软件使用指南#1. Claude Code|Claude Code]]
 > - **Skill**：[[AI软件使用指南#2. Skill|Skill]]
-> - **Superpowers**：[[AI软件使用指南#3. Superpowers|Superpowers]]
+> - **下载的好用 Skill**：[[AI软件使用指南#2. Skill#Superpowers|Superpowers]]
+> - **小技巧**：[[AI软件使用指南#3. 使用小技巧|使用小技巧]]
 
 ## 1. Claude Code
 
@@ -38,16 +39,25 @@ tags:
 
 ## 2. Skill
 
+### Skill 是什么
 - **Skill**：相当于 Claude Code 的"技能包"，本质上是一个 markdown 文件，里面写了一套针对特定任务的提示词和工作流程。
 - **Skill vs Plugin**：skill 本质是一种能力模块；plugin 本质上是打包能力模块和其他配置的容器。
 - **生存范围**：
   1. **全局常驻型 skill**：覆盖范围是整个对话。
   2. **阶段/任务型 skill**：直到相关任务结束才会停止。
 
-## 3. Superpowers
-
+### Superpowers
 开发阶段四步：
 1. **需求与架构**：明确意图，评估方案利弊（无法输出任何代码）。
 2. **拆解与隔离**：创建独立开发环境，将大需求拆为细粒度卡片（没有任务 Plan，绝不下笔）。
 3. **驱动编码**：逐个任务卡片写测试、写实现、重构（没看到测试 FAIL，绝不写功能代码，强制执行红绿重构流程，即 TDD 原则）。
 4. **排错与交付**：定位根因、修复 Bug、响应 Code Review、提 PR。
+
+## 3. 使用小技巧
+
+- 让agent实现长期记忆的方法：
+     - compact:压缩大量当前对话 -> 把大量原始对话和过程记录替换成一份更短的摘要
+         缺点：关键信息会在压缩过程中消失
+     -  handoff:
+     -  原生autoMemory + 结构化整理规则 = 结构化记忆
+     
