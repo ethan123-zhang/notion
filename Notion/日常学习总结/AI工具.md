@@ -12,15 +12,15 @@ tags:
   - Superpowers
 ---
 
-# AI使用指南
+# AI工具
 
 > 相关笔记：[[工具链与杂项]]
 
 > **📑 本文件跳转目录**
-> - **Claude Code**：[[AI使用指南#1. Claude Code|Claude Code]]
-> - **Skill**：[[AI使用指南#2. Skill|Skill]]
-> - **下载的好用 Skill**：[[AI使用指南#2. Skill#Superpowers|Superpowers]]
-> - **小技巧**：[[AI使用指南#3. 使用小技巧|使用小技巧]]
+> - **Claude Code**：[[AI工具#1. Claude Code|Claude Code]]
+> - **Skill**：[[AI工具#2. Skill|Skill]]
+> - **下载的好用 Skill**：[[AI工具#2. Skill#Superpowers|Superpowers]]
+> - **小技巧**：[[AI工具#3. 使用小技巧|使用小技巧]]
 
 ## 1. Claude Code
 
