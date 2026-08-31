@@ -5,6 +5,11 @@ tags:
   - AI
   - Claude_code
   - skill
+  - MCP
+  - subagent
+  - autoMemory
+  - compact
+  - Superpowers
 ---
 
 # AI使用指南

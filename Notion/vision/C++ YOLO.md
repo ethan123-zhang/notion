@@ -6,6 +6,14 @@ tags:
   - OpenCV
   - C++
   - 部署
+  - onnx
+  - dnn
+  - NMS
+  - blobFromImage
+  - 姿态检测
+  - onnxRuntime
+  - NCHW
+  - 目标检测
 ---
 
 # C++ YOLO 部署：深度学习 → OpenCV → C++ 全链路

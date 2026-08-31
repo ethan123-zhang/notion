@@ -6,6 +6,13 @@ tags:
   - 容器
   - 迭代器
   - 算法
+  - vector
+  - string
+  - list
+  - set
+  - deque
+  - 仿函数
+  - 泛型编程
 ---
 
 # C++ STL（标准模板库）

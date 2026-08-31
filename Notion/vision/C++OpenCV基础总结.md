@@ -5,6 +5,14 @@ tags:
   - 图像处理
   - C++
   - 基础总结
+  - Mat
+  - 像素
+  - 色彩空间
+  - 直方图
+  - 图像IO
+  - HSV
+  - Scalar
+  - ROI
 ---
 
 # C++ OpenCV 基础总结

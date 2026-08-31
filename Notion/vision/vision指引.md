@@ -4,6 +4,7 @@ tags:
   - 导航
   - OpenCV
   - 视觉
+  - 算法索引
 ---
 
 # vision 指引

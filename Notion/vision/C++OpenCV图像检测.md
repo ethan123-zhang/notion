@@ -9,6 +9,17 @@ tags:
   - 图像分割
   - 目标跟踪
   - 霍夫变换
+  - 角点检测
+  - SIFT
+  - ORB
+  - 光流
+  - RANSAC
+  - Harris
+  - 分水岭
+  - GrabCut
+  - GMM
+  - K-Means
+  - 距离变换
 ---
 
 # C++ OpenCV 图像检测
