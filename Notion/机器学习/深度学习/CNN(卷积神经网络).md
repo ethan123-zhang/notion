@@ -22,6 +22,8 @@ tags:
   - mobileNet
   - efficientNet
   - 迁移学习
+  - 数据增强
+  - 目标定位
 ---
 # CNN(卷积神经网络)
 
@@ -322,3 +324,7 @@ c1,c2……表示类别概率
 - 当$p_c$ = 0时，其余坐标均无效，只惩罚$p_c$预测误差
 
 损失函数：$$\mathcal{L}(\hat{y}, y) = \mathcal{L}_{conf}(\hat{p}_c, p_c) + p_c \cdot \Big( \mathcal{L}_{box}(\hat{b}, b) + \mathcal{L}_{class}(\hat{c}, c) \Big)$$
+### 地标检测
+
+- 将预测单一矩形框的任务，泛化成让神经网络直接回归目标上一系列具有固定几何与语义意义的二维坐标点
+- 标签与定义必须全局统一：标签中的位置坐标对应的
