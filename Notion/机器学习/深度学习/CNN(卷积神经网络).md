@@ -312,4 +312,13 @@ $A^{[l]}$ = g($Z^{[l]}$)
 
 ## 目标定位
 
-- 不仅要求判断图中物体的lei
+- 不仅要求判断图中物体的类别，还要用边界框把物体圈出来
+- 通常针对图像中只有一个主要目标
+
+**输出向量**$$y = \begin{bmatrix} p_c \\ b_x \\ b_y \\ b_h \\ b_w \\ c_1 \\ c_2 \\ \dots \end{bmatrix}$$
+$p_c$表示有无目标物体
+c1,c2……表示类别概率
+
+- 当$p_c$ = 0时，其余坐标均无效，只惩罚$p_c$预测误差
+
+损失函数：$$\mathcal{L}(\hat{y}, y) = \mathcal{L}_{conf}(\hat{p}_c, p_c) + p_c \cdot \Big( \mathcal{L}_{box}(\hat{b}, b) + \mathcal{L}_{class}(\hat{c}, c) \Big)$$
