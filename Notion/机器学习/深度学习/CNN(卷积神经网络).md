@@ -505,8 +505,15 @@ $$\mathcal{L}(A, P, N) = \max\left( 0, \Vert{}f(A) - f(P)\Vert{}^2 - \Vert{}f(A)
 **挑选有价值的三元组**
 
 - 应避免的数据组
-	- 如果数据中有$\Vert{}f(A) - f(P)\Vert{}^2 + \alpha < \Vert{}f(A) - f(N)\Vert{}^2$，那么该数据组已经失去了训练的意义
+	- $\Vert{}f(A) - f(P)\Vert{}^2 + \alpha < \Vert{}f(A) - f(N)\Vert{}^2$ -> 已经失去了训练的意义
 
 - 应挑选
 	- $\Vert{}f(A) - f(N)\Vert{}^2 < \Vert{}f(A) - f(P)\Vert{}^2$ -> 收敛速度极快
 	- $\Vert{}f(A) - f(P)\Vert{}^2 < \Vert{}f(A) - f(N)\Vert{}^2 < \Vert{}f(A) - f(P)\Vert{}^2 + \alpha$ -> 工程中常用，训练更稳定
+
+### 人脸验证与二分类
+
+- 将人脸比对问题直接转换为传统的二分类问题
+	- 将图片扔进CNN中，得出两个特征向量
+	- 将两个特征向量主元素进行差异计算，然后将差值扔进最后一层sigmoid神经元中进行预测
+$$\hat{y} = \sigma\left( \sum_{k=1}^{K} w_k \cdot \vert{}f(x^{(i)})_k - f(x^{(j)})_k\vert{} + b \right)$$
