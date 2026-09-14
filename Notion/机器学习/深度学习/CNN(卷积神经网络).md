@@ -559,3 +559,11 @@ $$J_{\text{content}}(C, G) = \frac{1}{2} \Vert{} a^{[l](C)} - a^{[l](G)} \Vert{}
 
 ### 风格损失函数
 
+- 风格体现于同一层内不同通道激活特征之间的相关性
+
+- 具体过程
+	- 将l层的S和G的Gram矩阵进行提取，其中i和k表示同一层的不同通道
+	$$G_{ik}^{[l]} = \sum_{h=1}^{n_H} \sum_{w=1}^{n_W} a_{i,h,w}^{[l]} a_{k,h,w}^{[l]}$$
+	 - 计算两个Gram矩阵对应元素的均方误差，得到第l层的标量损失
+	$$J_{\text{style}}^{[l]}(S, G) = \frac{1}{(2 n_H^{[l]} n_W^{[l]} n_C^{[l]})^2} \sum_{i=1}^{n_C^{[l]}} \sum_{k=1}^{n_C^{[l]}} \left( G_{ik}^{[l](S)} - G_{ik}^{[l](G)} \right)^2$$
+		- gui'yi'j
