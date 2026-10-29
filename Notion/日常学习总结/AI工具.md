@@ -85,4 +85,4 @@ tags:
 ## 基于codex-deepseek_harness的AI架构
 
 - codex专注于分工管理 -> [[转接文件库#Codex|Codex]]
-- 
+- deepseek做结构化任务 -> [[转接文件库#Deepseek|Deepseek]]
